@@ -41,6 +41,16 @@ function drawPaddle() {
 	ctx.closePath();
 }
 
+
+//Draw everythingfun		
+function draw() {
+	drawPaddle();
+	drawBall();
+}
+
+
+draw();
+
 // Keyboard event handlers
 document.addEventListener('keydown', keyDown);
 document.addEventListener('keyup', keyUp);
