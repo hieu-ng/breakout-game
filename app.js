@@ -154,6 +154,14 @@ function moveBall() {
 	}
 }
 
+// Increase score
+function increaseScore() {
+	score++;
+
+	if (score % (brickRowCount * brickRowCount) === 0) {
+		showAllBricks();
+	}
+}
 
 draw();
 
