@@ -75,6 +75,18 @@ for (let i = 0; i < brickRowCount; i++) {
 	}
 }
 
+function drawBricks() {
+	bricks.forEach(column => {
+		column.forEach(brick => {
+			ctx.beginPath();
+			ctx.rect(brick.x, brick.y, brick.w, brick.h);
+			ctx.fillStyle = brick.visible ? '#0095dd' : 'transparent';
+			ctx.fill();
+			ctx.closePath();
+		});
+	});
+}
+
 
 draw();
 
