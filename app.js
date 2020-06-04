@@ -22,6 +22,16 @@ function drawBall() {
 	ctx.closePath;
 }
 
+// Create paddle props
+const paddle = {
+	x: canvas.width / 2 - 40,
+	y: canvas.height / 2 - 20,
+	w: 80,
+	h: 10,
+	speed: 8,
+	dx: 0,
+}
+
 // Keyboard event handlers
 document.addEventListener('keydown', keyDown);
 document.addEventListener('keyup', keyUp);
