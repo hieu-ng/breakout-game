@@ -32,6 +32,15 @@ const paddle = {
 	dx: 0,
 }
 
+// Draw paddle on canvas
+function drawPaddle() {
+	ctx.beginPath();
+	ctx.rect(paddle.x, paddle.y, paddle.w, paddle.h);
+	ctx.fillStyle = '#0095dd';
+	ctx.fill();
+	ctx.closePath();
+}
+
 // Keyboard event handlers
 document.addEventListener('keydown', keyDown);
 document.addEventListener('keyup', keyUp);
